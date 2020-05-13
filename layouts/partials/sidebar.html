@@ -9,13 +9,12 @@
 
     <nav>
       <ul class="sidebar-nav">
-        <li><a href="{{ .Site.BaseURL }}">Home</a> </li>
         {{ range .Site.Menus.main -}}
           <li><a href="{{.URL}}"> {{ .Name }} </a></li>
         {{- end }}
       </ul>
     </nav>
 
-    <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</p>
+    <a style="color: rgba(255,255,255,.5)" href="https://github.com/gustavomtborges/gustavoborges.net" target="_blank" rel="noopener">Site de código livre</a>
   </div>
 </aside>
